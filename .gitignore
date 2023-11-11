@@ -1,0 +1,8 @@
+node_modules
+/dist
+/cdn
+.pnpm-debug.log
+/npm
+/scripts/dev/bundle.js
+/scripts/dev/bundle.js.map
+.DS_Store
