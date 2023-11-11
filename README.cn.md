@@ -25,7 +25,7 @@ npm i qr-camera
 ```js
 import {QRCamera} from 'qr-camera';
 
-function main(){
+async function main(){
     const camera = new QRCamera();
     document.body.appendChild(camera.video);
     console.log(await camera.scanQrcode());
@@ -36,15 +36,17 @@ main();
 ### CDN
 
 ```html
+<body>
 <script src="https://unpkg.com/qr-camera"></script>
 <script>
-    function main(){
+    async function main(){
         const camera = new QRCamera();
         document.body.appendChild(camera.video);
         console.log(await camera.scanQrcode());
     }
     main();
 </script>
+</body>
 ```
 
 ## API

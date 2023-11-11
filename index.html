@@ -1,0 +1,26 @@
+<!--
+ * @Author: chenzhongsheng
+ * @Date: 2023-11-11 10:09:06
+ * @Description: Coding something
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://unpkg.com/qr-camera"></script>
+    <script>
+         async function main(){
+             const camera = new QrcodeScanner.Camera();
+             document.body.appendChild(camera.video);
+             const result = await camera.scanQrcode();
+            if (result) console.log(`ScanQRCode Result: ${result}`);
+             
+         }
+         main();
+    </script>
+</body>
+</html>

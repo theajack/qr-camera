@@ -5,9 +5,5 @@
  */
 export * as version from './version';
 export * as qrcode from 'tc-qrcode';
-
 import {Camera} from './camera';
-
 export const QRCamera = Camera;
-
-export default Camera;

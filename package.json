@@ -1,6 +1,6 @@
 {
     "name": "qr-camera",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "qr-camera",
     "repository": "git@github.com:theajack/qr-camera.git",
     "author": "tackchen <theajack@qq.com>",

@@ -1,5 +1,6 @@
 import {delay, withResolve} from './util';
 import qrcode from 'tc-qrcode';
+import version from './version';
 
 /*
  * @Author: chenzhongsheng
@@ -9,6 +10,10 @@ import qrcode from 'tc-qrcode';
 export class Camera {
     
     video: HTMLVideoElement;
+
+    static qrcode = qrcode;
+
+    static version = version;
 
     ready: Promise<any>;
 
